@@ -61,7 +61,7 @@ This assumes you have nodemon installed globally (npm install -g nodemon). Alter
 
 **Database:**  MySQL(via phpMyAdmin)
 
-**Other Tools:**  npm, Figma, Postman, VS Code, Chrome Dev Tools
+**Other Tools:**  npm, Figma, Postman, VS Code, Chrome Dev Tools, images from Pexels & Unsplash
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
