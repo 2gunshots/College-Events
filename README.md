@@ -2,6 +2,7 @@
 # Eventify
 
 Your University Event Planner.
+
 Whether you're planning a mind-blowing concert, an intimate workshop, or a bustling conference for you university, Eventify has got your back! Dive into a world where organizing events is as easy as pie (or as smooth as jazz, if you prefer).
 
 
