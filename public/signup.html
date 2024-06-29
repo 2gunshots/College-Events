@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" id="outerimg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body id="login">
+
+    <div class="outer-img">
+    </div>
+
+
+    <div class="gridLogin modal signup">
+        <div class="login-img 1st">
+        </div>
+        <div class="sign-div">
+            <div class="close-btn">
+                <img src="/icons/close.png" alt="" width="35px">
+            </div>
+            <div class="login-div">
+                <h2>Sign Up</h2>
+                <h5>College Event Calander</h5>
+                <form id="loginForm" action="http://localhost:3000/register" method="post">
+                    <div>
+                        <!-- <label for="name">Name</label> -->
+                        <input type="text" id="name" name="name" placeholder="Name"><br>
+                    </div>
+                    <div>
+                        <!-- <label for="email">Email</label><br> -->
+                        <input type="text" id="email" name="email" placeholder="Email"><br>
+                    </div>
+                    <div>
+                        <!-- <label for="password">Password</label><br> -->
+                        <input type="text" id="password" name="password" placeholder="Password"><br>
+                    </div>
+                    <div>
+                        <!-- <label for="department">Department</label><br> -->
+                        <Select id="department" name="department" aria-placeholder="Department">
+                            <option value="" disabled selected>Department</option>
+                            <option value="Chemical">Chemical</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Computer">Computer</option>
+                            <option value="Electrical">Electrical</option>
+                            <option value="ENTC">ENTC</option>
+                            <option value="Mechanical">Mechanical</option>
+                            <option value="Production">Production</option>
+                        </select><br>
+                    </div>
+                    <div>
+                        <!-- <label for="year">Year</label><br> -->
+                        <Select id="year" name="year">
+                            <option value="" disabled selected>Year</option>
+                            <option value="FE">FE</option>
+                            <option value="SE">SE</option>
+                            <option value="TE">TE</option>
+                            <option value="BE">BE</option>
+                        </select><br>
+                    </div>
+                    <div>
+                        <!-- <label for="division">Division</label><br> -->
+                        <Select id="division" name="division">
+                            <option value="" disabled selected>Division</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                        </select><br>
+                    </div>
+                    <div class="flex">
+                        <button type="submit" style="font-weight:500;">Register</button><br>
+                    </div>
+                    <div class="account">
+                        <span>Already have an account?</span>
+                    <a href="http://localhost:3000/login" id="login-u">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/index.js"></script>
+    <script>
+        function validateEmail(email) {
+            const re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const emailInput = document.getElementById('email');
+            const email = emailInput.value.trim();
+
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            document.getElementById('loginForm').submit();
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', handleSubmit);
+    </script>
+
+</body>
+</html>

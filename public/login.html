@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" id="outerimg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body id="login">
+
+    <!-- <div ></div> -->
+    <div class="outer-img">
+    </div>
+    <div class="gridLogin modal login">
+        <div class="login-img 1st">
+        </div>
+        <div class="signup-div">
+            <h2>Sign In</h2>
+            <h5>College Event Calander</h5>
+            <form id="loginForm" action="http://localhost:3000/login" method="post">
+                <div>
+                    <!-- <label for="email">Email</label><br> -->
+                <input type="text" id="email" name="email" placeholder="Email"><br>
+                </div>
+                <div>
+                    <!-- <label for="password">Password</label><br> -->
+                <input type="password" id="password" name="password" placeholder="Password"><br>
+                </div>
+                <div class="forgot">
+                    <a onclick="alertBox()">Forgot Password?</a>
+                </div>
+
+                <div class="flex">
+                    <button type="submit" style="font-weight:00;">Login</button><br>
+                </div>
+                <div class="account">
+                    <span>Don't have an account?</span>
+                <a href="http://localhost:3000/register" id="register-u">Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- <div class="container">
+        <form id="signupForm" action="http://localhost:3000/eventform" method="post">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">email</label>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="password">password</label>
+            <input type="text" id="password" name="password"><br>
+
+            <label for="department">department</label>
+            <Select id="department" name="department">
+                <option value="Chemical">Chemical</option>
+                <option value="Civil">Civil</option>
+                <option value="Computer">Computer</option>
+                <option value="Electrical">Electrical</option>
+                <option value="ENTC">ENTC</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Production">Production</option>
+            </select><br>
+
+            <label for="year">year</label>
+            <Select id="year" name="year">
+                <option value="FE">FE</option>
+                <option value="SE">SE</option>
+                <option value="TE">TE</option>
+                <option value="BE">BE</option>
+            </select><br>
+
+            <label for="division">division</label>
+            <Select id="division" name="division">
+                <option value="A">A</option>
+                <option value="B">B</option>
+            </select><br>
+
+
+            <a href="">Login?</a>
+        </form>
+
+    </div> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/index.js"></script>
+    <script>
+        // function loginRegister() {
+        //     console.log("lajsnaslnjn")
+        //     $(".gridLogin.login").toggleClass("hidden");
+        //     $(".gridLogin.signup").toggleClass("hidden");
+        //     console.log("clicked on id")
+        // }
+
+        // $("#register-u").click(function() {
+        //     loginRegister();
+        // });
+        // $("#login-u").click(function() {
+        //     loginRegister();
+        // });
+        function alertBox(){
+            window.alert("Email Services aren't available yet, Time to play 'Remember That Password'")
+        }
+    </script>
+</body>
+</html>
