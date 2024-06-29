@@ -46,6 +46,16 @@ This assumes you have nodemon installed globally (npm install -g nodemon). Alter
 7. Test Your Application:
 
 - Open a web browser and navigate to http://localhost:your_port to see your application running.
+
+## Tech Stack
+
+**Client:**  HTML, EJS, CSS, Bootstrap, JavaScript
+
+**Server:**  Node.js, Express
+
+**Database:**  MySQL(via phpMyAdmin)
+
+**Other Tools:**  npm, Figma, Postman, VS Code, Chrome Dev Tools
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
