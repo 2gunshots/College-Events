@@ -26,7 +26,11 @@ To begin working with this project, follow these steps:
 3. Initialize the Project:
 
 - Open your IDE and navigate to the project directory in the terminal.
-- Run npm init -y to initialize a package.json file with default options.
+- Run
+  ``
+  npm init -y
+  ``
+  to initialize a package.json file with default options.
 4. Install Dependencies:
 
 - Run the following command to install project dependencies:
