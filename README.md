@@ -7,7 +7,8 @@ Whether you're planning a mind-blowing concert, an intimate workshop, or a bustl
 ## Screenshots
 
 ![Login Page Screenshot](/screenshots/loginpage.png?raw=true "Login Page Screenshot Here")
-![Home Page Screenshot](/screenshots/homepage.png?raw=true "Home Page Screenshot Here")
+
+![Home Page Screenshot](./screenshots/homepage.png?raw=true "Home Page Screenshot Here")
 
 ## Installation and Run Locally
 
